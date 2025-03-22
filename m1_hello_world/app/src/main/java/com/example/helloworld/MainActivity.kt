@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
             if (counter >= 50) {
                 binding.status.text = getText(R.string.warning_status)
                 binding.reset.visibility = View.VISIBLE
+                binding.plus.isEnabled = false
                 binding.status.setTextColor(getColorStateList(R.color.red))
             }
             binding.minus.isEnabled = true
@@ -41,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             binding.status.text = getText(R.string.default_status)
             binding.reset.visibility = View.INVISIBLE
             binding.minus.isEnabled = false
+            binding.plus.isEnabled = true
             binding.status.setTextColor(getColorStateList(R.color.green))
         }
     }
