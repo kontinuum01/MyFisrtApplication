@@ -23,5 +23,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
                 android:layout_margin="16dp" />
+
+            <com.example.layout.Post
+                android:id="@+id/post3"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_margin="16dp"/>
+
     </LinearLayout>
 </ScrollView>

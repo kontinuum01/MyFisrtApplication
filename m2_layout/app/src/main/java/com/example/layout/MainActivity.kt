@@ -10,7 +10,11 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.post1.setTopText("верхняя строчка, настроенная из кода")
+        binding.post1.setBottomText("нижняя строчка, настроенная из кода")
         binding.post2.setTopText("верхняя строчка, настроенная из кода")
         binding.post2.setBottomText("нижняя строчка, настроенная из кода")
+        binding.post3.setTopText("верхняя строчка, настроенная из кода")
+        binding.post3.setBottomText("нижняя строчка, настроенная из кода")
     }
 }
