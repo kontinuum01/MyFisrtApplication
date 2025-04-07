@@ -18,6 +18,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="@string/image_description" />
 
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image_description1"
+        android:src="@drawable/album_cover"
+        android:visibility="gone"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="150dp"
