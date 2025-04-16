@@ -34,7 +34,7 @@ class WelcomeFragment : Fragment() {
             dateDialog.addOnPositiveButtonClickListener { time ->
                 calendar.timeInMillis = time
                 val day = calendar.get(Calendar.DAY_OF_MONTH)
-                val month = calendar.get(Calendar.MONTH)
+                val month = calendar.get(Calendar.MONTH) + 1
                 val year = calendar.get(Calendar.YEAR)
                 val text = "$day/$month/$year"
                 Snackbar.make(binding.buttonDateBirth, text, Snackbar.LENGTH_SHORT).show()
