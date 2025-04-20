@@ -1,5 +1,6 @@
 package com.example.components
 
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -7,6 +8,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.components.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -46,6 +48,7 @@ class MainActivity : AppCompatActivity() {
 
             binding.buttonStart.setOnClickListener {
                 startTimer()
+                binding.buttonStart.setBackgroundColor(Color.GREEN)
             }
         }
     }
@@ -86,6 +89,7 @@ class MainActivity : AppCompatActivity() {
                 binding.buttonStop.setOnClickListener {
                     timerIsActive = false
                     stopTimerThread()
+                    binding.buttonStop.setBackgroundColor(ContextCompat.getColor(this,R.color.red))
                 }
 
                 timeCounter--
